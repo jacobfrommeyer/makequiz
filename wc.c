@@ -66,7 +66,11 @@
        return isalpha (c);
      }
      
-     /* Increase character and, if necessary, line counters */
+     /**
+      * @brief Increase character and, if necessary, line counters 
+      * @param C
+      * @return Returns nothing
+      */
      #define COUNT(c)       \
            ccount++;        \
            if ((c) == '\n') \
@@ -104,6 +108,12 @@
      }
            
      /* Process file FILE. */
+
+     /**
+      * @brief This function counts the number of words in a file
+      * @param A file
+      * @return Returns nothing
+      */
      void
      counter (char *file)
      {
